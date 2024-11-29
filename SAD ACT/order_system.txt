@@ -1,0 +1,14 @@
+CREATE TABLE cart (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  product_id VARCHAR(10) NULL,
+  quantity INT(11) NOT NULL
+);
+
+CREATE TABLE products (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  product_id VARCHAR(10) NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  stock INT(11) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  image_path VARCHAR(255) NULL
+);
